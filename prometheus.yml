@@ -25,6 +25,14 @@ scrape_configs:
   target_groups:
     - targets:
         - 'prometheus-rancher-exporter:9010' 
+        
+- job_name: 'ha-proxy'
+  dns_sd_configs:
+  - names:
+   - HA-Proxy-2
+    refresh_interval: 15s
+    type: A
+    port: 9101
 
 - job_name: 'Prometheus'
   target_groups:

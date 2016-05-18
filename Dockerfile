@@ -1,6 +1,6 @@
 #Prometheus Config Store Dockerfile
 FROM alpine
-MAINTAINER Ed Marshall (ed.marshall@infinityworks.com)
+MAINTAINER Patrick Breucking (code@patrickbreucking.de)
 
 RUN mkdir -p /etc/prom-conf/
 

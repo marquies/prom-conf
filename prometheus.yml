@@ -29,7 +29,7 @@ scrape_configs:
 - job_name: 'ha-proxy'
   dns_sd_configs:
   - names:
-   - HA-Proxy-2
+    - HA-Proxy-2
     refresh_interval: 15s
     type: A
     port: 9101
